@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Align dropdown directly under the menu */
+}
+
+/* Optional: keep highlight when hovering */
+.nav-item.dropdown:hover > .nav-link {
+  color: #fff;
+  background-color: #495057; /* dark gray hover background */
+  border-radius: 0.25rem;
+}
+
