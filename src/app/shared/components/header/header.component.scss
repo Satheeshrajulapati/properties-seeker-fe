@@ -1,0 +1,81 @@
+/* ----------------------
+   Primary Navbar (Dark)
+-------------------------*/
+.navbar-dark {
+    background-color: #212529 !important;
+    /* Bootstrap dark background */
+    padding: 0.75rem 1rem;
+
+    .navbar-brand img {
+        max-height: 50px;
+    }
+
+    .nav-link {
+        color: #ccc !important;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+
+        &:hover {
+            color: #fff !important;
+        }
+
+        &.active {
+            color: #fff !important;
+            border-bottom: 2px solid #0d6efd;
+            /* Bootstrap primary blue */
+        }
+    }
+}
+
+/* ----------------------
+   Secondary Navbar
+-------------------------*/
+.navbar-secondary {
+    background-color: #f8f9fa;
+    /* Light gray background */
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+
+    .navbar-nav {
+        margin: 0 auto;
+        gap: 0.5rem;
+        /* spacing between items */
+    }
+
+    .nav-link {
+        font-weight: 500;
+        color: #333;
+        padding: 0.5rem 0.75rem;
+        transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+
+        &:hover {
+            color: #0d6efd;
+        }
+
+        &.active {
+            color: #0d6efd;
+            border-bottom: 2px solid #0d6efd;
+        }
+    }
+
+    /* Style for "NEW" badge */
+    .badge {
+        font-size: 0.65rem;
+        padding: 0.2rem 0.4rem;
+        border-radius: 0.25rem;
+        line-height: 1;
+    }
+}
+
+/* ----------------------
+   Responsive (Mobile)
+-------------------------*/
+@media (max-width: 991px) {
+    .navbar-secondary .navbar-nav {
+        flex-wrap: wrap;
+        /* Wrap into multiple rows on mobile */
+        justify-content: center;
+    }
+}
